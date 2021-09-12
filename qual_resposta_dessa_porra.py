@@ -35,6 +35,7 @@ def get_code(site):
     return raw[1:]
 
 if __name__ == "__main__":
+    query = input("Cole a pergunta: ")
     for site in search(query, tld="co.in", num=10, stop=10, pause=2):
         if str(site).__contains__('qconcursos') and str(site).__contains__('questoes/'):
             question_code = get_code(site)
