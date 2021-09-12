@@ -2,14 +2,11 @@ import requests as requests
 import json
 from datetime import date
 import re
-
-try:
-    from googlesearch import search
-except ImportError:
-    print("No module named 'google' found")
+from googlesearch import search
 
 # to search
-query = "Um processo é uma atividade que ocorre em meio computacional, usualmente possuindo um objetivo definido, tendo duração infinita e utilizando uma quantidade limitada de recursos computacionais."
+query = "Um processo é uma atividade que ocorre em meio computacional, usualmente possuindo um objetivo definido, " \
+        "tendo duração infinita e utilizando uma quantidade limitada de recursos computacionais. "
 
 header = {'Host': 'www.qconcursos.com',
           'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0',
